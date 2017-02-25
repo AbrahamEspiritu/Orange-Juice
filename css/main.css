@@ -62,11 +62,16 @@ nav li > a {
     transform: translate(0, 0);
 }
 
-.oj {
+/*.oj {
     left: 5px;
     position: absolute;
     top: 140px;
     width: 69px;
+}*/
+
+.oj {
+	background-image: url(../img/orangeslice.jpg);
+  background-repeat: no-repeat;
 }
 
 header {
@@ -91,6 +96,14 @@ header a {
     text-align: left;
 }
 
+#lb button {
+    color: #ee6f1a;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-radius: 2px;
+
+}
+
 footer {
     background: #a2e6f0;
     padding-bottom: 30px;
@@ -106,4 +119,64 @@ h1 span {
     font-family: 'Open Sans', sans-serif;
     color: #orange;
     font-weight: 100;
+}
+
+@media (max-width: 1001px){
+      nav > a {
+        left: 0px;
+      }
+}
+
+@media (max-width: 634px) and (min-width: 577px){
+      nav > a {
+        font-size: 30px;
+      }
+}
+
+@media (max-width: 576px) and (min-width: 533px){
+      nav > a {
+        font-size: 20px;
+      }
+}
+
+@media (max-width: 532px){
+      nav > a {
+        font-size: 10px;
+      }
+}
+
+@media (max-width: 785px) and (min-width: 726px){
+      nav ul {
+        font-size: small;
+      }
+}
+
+@media (max-width: 733px) and (min-width: 489px){
+      nav ul {
+        font-size: x-small;
+      }
+}
+
+@media (max-width: 488px){
+      nav ul {
+        font-size: 5px;
+      }
+}
+
+@media (max-width: 472px) and (min-width: 424px){
+      header {
+        font-size: xx-small;
+      }
+}
+
+@media (max-width: 423px){
+      header {
+        font-size: 5px;
+      }
+}
+
+@media (max-width: 710px){
+      .oj {
+        background-size: contain;
+      }
 }
